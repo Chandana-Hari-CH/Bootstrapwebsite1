@@ -1,0 +1,76 @@
+
+body {
+    font-family: "Asap", sans-serif;
+    font-optical-sizing: auto;
+}
+#video {
+    margin: 0;
+    padding: 0;
+    
+  
+
+}
+
+.vdo {
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+    color: white;
+}
+
+.overlay h3 {
+    margin: 0 10px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.overlay h3:hover {
+    text-decoration: underline;
+}
+
+.overlay img {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.over h6 {
+    
+    padding: 5px;
+    padding-left: 60px;
+    margin: 4px;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.overl {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    
+}
+
+.custom-button:hover {
+    background-color: black !important;
+    color: white !important;
+}
+.col1{
+    position: absolute;
+    top 0;
+    margin-top: 160px;
+}
