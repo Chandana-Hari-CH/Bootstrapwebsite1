@@ -6,21 +6,27 @@ body {
 #video {
     margin: 0;
     padding: 0;
-    
+    /* height: 800px; */
+  
   
 
 }
 
-.vdo {
+.vdo{
     display: block;
     width: 100%;
-    height: 600px;
     margin: 0;
     padding: 0;
-    object-fit: cover;
+    /* object-fit: cover; */
+    background-size: cover;
+    
+    
 }
 
-
+.overlay::before{
+    position: sticky;
+    top 0;
+}
 .overlay {
     position: absolute; 
     top: 0;
@@ -29,39 +35,25 @@ body {
     align-items: flex-start;
     padding-top: 60px;
     color: white;
-}
-
-.overlay h3 {
-    margin: 0 10px;
-    font-size: small;
     cursor: pointer;
 }
 
-.overlay h3:hover {
+
+.col-2:hover {
     text-decoration: underline;
 }
 
 .overlay img {
+    align-items: center;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
-
-.over h6 {
+    width: 200px;
     
-    padding: 5px;
-    padding-left: 60px;
-    margin: 4px;
-    font-size: smaller;
-    cursor: pointer;
 }
 
-.overl {
+
+.overl{
     position: absolute;
     top: 50%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
     
 }
 
@@ -73,4 +65,43 @@ body {
     position: absolute;
     top 0;
     margin-top: 160px;
+}
+.col-2{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+}
+.lay{
+    padding-top: 100px;
+    margin: 50px;
+    font-size: 50px;
+    color: aliceblue;
+}
+.col-6:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: transform 0.3s ease;
+    
+    
+}
+p:hover{
+    color: red;
+}
+.col-2:hover{
+ color: red;
+ transform: scale(1.0);
+ opacity: 1;
+}
+.rowx {
+    margin-top: 20px; 
+}
+
+.rowx .col-2 img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.rowx .col-2 img:hover {
+    transform: scale(1.1); 
 }
